@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>내장객체 - request</title>
 </head>
 <body>
 	<h2>1. 클라이언트와 서버의 환경정보 읽기</h2>
@@ -14,6 +14,11 @@
 	<!-- 404 : 페이지를 찾을수 없음
 		서버에 파일이 없는경우, 또는 결로가 일치하지 않는경우
 		URL경로를 확인해봐야 함!!	
+		
+		url로 호출 : 무조건 get방식으로 호출
+		http//			: 프로토컬 = 통신규약
+		naver.com		: 도메인(ip,port) = 웹서버를 찾아갑니다!!
+		경로				: 파일 경로, 메핑정보
 	 -->
 	<a href="RequestWebInfo.jsp?eng=hellow&han=안녕">GET방식 요청</a>
 	
@@ -26,7 +31,7 @@
 	<h2>2. 클라이언트의 요청 매개변수 읽기</h2>
 	<form method="post" action="RequestParameter.jsp">
 	<!-- 다양한 input태그를 사용하여 서버에 값을 전달 해봅시다 -->
-		아이디 : <input type="text" name="id" value="a" /><br />
+		아이디 : <input type="text" name="id" value="a">"/><br />
 		아이디 : <input type="text" name="id" value="b" /><br />
         성별 :
         <input type="radio" name="sex" value="man" />남자
@@ -41,5 +46,8 @@
         <br />
         <input type="submit" value="전송하기" />
 	</form>
+	
+	<h2>3. HTTP 요청 헤더 정보 읽기</h2>
+	<a href="RequestHeader.jsp">요청 헤더정보 읽기</a>
 </body>
 </html>
