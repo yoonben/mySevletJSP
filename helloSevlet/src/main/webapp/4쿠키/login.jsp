@@ -40,7 +40,7 @@
 		<div class='loginbox'>
 			<div id='login'>
 				<input type="text" name="userid" id="userpw" placeholder='ID를 입력해주세요.' value="<%=userId%>"> 
-				<input type="password" name="userpw" id="userpw" placeholder='PW를 입력해주세요.'>
+				<input type="password" name="userpw" id="userpw" placeholder='PW를 입력해주세요.'><br>
 				<input type="checkbox" name="save_check" value="Y">아이디 저장하기<br>
 			</div>
 			<div id='button'>
